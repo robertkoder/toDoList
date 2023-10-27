@@ -1,0 +1,71 @@
+body, main, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+}
+
+#todo-container {
+    max-width: 90%;
+    min-width: 20%;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 60%;
+}
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#taskInput {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+.task:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.done label {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.trashBin {
+    margin-left: auto;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.trashBin:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.hidden {
+    display: none;
+}
